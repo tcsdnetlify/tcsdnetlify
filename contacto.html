@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/23TCSD_logotipo.png" type="image/x-icon">
+    <link rel="stylesheet" href="contacto.css">
+    <title>Contacto | 23TCSD</title>
+</head>
+<body>
+    <header class="fade-in">
+        <div class="logomarca">
+            <img src="imagem/23TCSD_logomarca.png" alt="logomarca 23TCSD">
+        </div>
+        <nav>
+            <ul>
+                <li class="responssivo"><a href="index.html">Home</a></li>
+                <li class="descktop"><a href="index.html">HOME</a></li>
+                <li class="descktop"><a href="turma.html">A TURMA</a></li>
+                <li class="responssivo"><a href="turma.html">A turma</a></li>
+                <li class="descktop"><a href="https://www.etap.pt/">ETAP WEB</a></li>
+                <li class="responssivo"><a href="https://www.etap.pt/">Etap web</a></li>
+            </ul>
+        </nav>
+    </header>   
+
+    <main>
+        <h1><span>Vamos conversar!</span></h1>
+        <h2>Estamos aqui para ajudar. Entre em contacto connosco e tire as suas dúvidas.</h2>
+        <div class="content">
+            <div class="parte">
+                <p>Unidades de formação <br> <span>Ensino Profissional</span></p>
+                <p><span>Localização</span> <br>Rua Costa  Pereira <br>4920-269 Vila Nova de Cerveira </p>
+            </div>
+            <div class="parte">
+                <p>Telefone <br> <span>Delegado:</span>+351 939 769 291 <br> <span>Subdelegada:</span>+351 960 245 104 <br> <span>Secretaria:</span> vncerveira@etap.pt</p>
+            </div>
+            <div class="parte">
+                <p><span>Elogiar/Reclamar</span> <br>Deixe a sua mensagem de elogio ou reclamação no formulário<br> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfi_seqZIHH0jWojq0hYDZIJp7pPnBTwVHqnaGeaYq5yI4TYQ/viewform"><img src="imagem/23tcsd_livro_de_elogio.png" alt="imagem do livro de elogios">&nbsp; &nbsp; <a href="https://www.livroreclamacoes.pt/Inicio/"><img src="imagem/23tcsd_livro_de_reclamação.png" alt=""></a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="redes">
+            <nav>
+                <ul>
+                    <a href="https://www.instagram.com/tcsd23etap?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61567634795975"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@tcsd.etap?_t=8rNzKG70IWf&_r=1"><i class="bi bi-tiktok"></i></a>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <ul>
+                <h3><strong>23TCSD Info</strong></h3>
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#" id="share-link">Partilhar</a></li>
+            </ul>
+            <script>
+                const shareLink = document.getElementById('share-link');
+            
+                shareLink.addEventListener('click', async (event) => {
+                  event.preventDefault(); // Evita o comportamento padrão do link
+                  if (navigator.share) {
+                    try {
+                      await navigator.share({
+                        title: 'Minha Loja',
+                        text: 'Confira esta incrível loja online!',
+                        url: 'https://minhaloja.com', // Substitua pelo URL da sua loja
+                      });
+                      console.log('Compartilhado com sucesso!');
+                    } catch (error) {
+                      console.error('Erro ao compartilhar:', error);
+                    }
+                  } else {
+                    alert('A funcionalidade de compartilhamento não é suportada neste navegador.');
+                  }
+                });
+              </script>
+            
+            <ul>
+                <h3>Aprendemos todos os dias, <br> e com todos</h3>
+                <li>Marketing digital</li>
+                <li>Neuromarketing</li>
+                <li>Redes sociais</li>
+                <li>Atendimento ao cliente</li>
+                <li>Branding & Design</li>
+                <li>Matemática</li>
+                <li>Psicologia</li>
+                <li>Intergração</li>
+                <li>Português</li>
+                <li>Economia</li>
+            </ul> 
+        </div>
+        
+        
+        </footer>
+        
+        <div class="done">
+            <p><code>BY <a href="https://www.instagram.com/ramos.c.e?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">ELIAS CARVALHO</a></code></p>
+        </div>
+</body>
+</html>

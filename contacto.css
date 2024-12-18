@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Definindo fontes e cores */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Estilo da Navbar */
+header {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 1opx;
+    background-color: #000e3d;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header img{
+    width: 130px;
+    padding: 5px;
+}
+
+nav ul {
+    text-align: center;
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #02e1ff;
+}
+
+.home .content{
+    margin-bottom: 10px;
+}
+
+.home {
+    padding: 60px 60px;
+    display: flex;
+    gap: 20%;
+    top: 0;
+    background-image: linear-gradient(to right, rgb(255, 217, 0), rgba(0, 204, 255, 0.993)), url('imagem/transferir.jpeg'); /* Imagem de fundo */
+    background-size: cover;
+    display: flex;
+    color: white;
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.home p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #000e3d;
+}
+
+video{
+    width: 100%;
+    height: 70%;
+}
+span{
+    color: #a38500;
+}
+
+#escola img{
+    width: 200px;
+}
+
+section {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: white;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+}
+
+main{
+    padding: 40px 40px;
+    background-color: #dfdfdf;
+}
+
+main h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main h2{
+    font-size: 30px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 50%;
+}
+
+main .content{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 40px;
+    margin-top: 60px;
+}
+
+main .content .parte img{
+    width: 200px;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 10px;
+}
+
+main .content .parte img:hover{
+    transform: scale(1.05);
+}
+footer{
+    background-color: #000e3d;
+    color: #f9f9f9;
+    display: block;
+    gap: 90px;
+}
+
+footer ul{
+    padding: 40px 40px;
+    list-style-type: none;
+    gap: 30px;
+}
+
+footer ul li{
+    color: #c2c2c2;
+    margin: 0 15px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #c2c2c2;
+    transition: color 0.3s ease-in-out;
+}
+
+footer ul li:hover{
+    color: #02e1ff;
+}
+
+
+footer ul li a:hover{
+    color: #02e1ff;
+}
+
+.done{
+    background-color: #00030e;
+    bottom: 0;
+    height: 10vh;
+}
+
+footer .content{
+    display: flex;
+}
+
+footer i{
+    font-size: 30px;
+    color: #02e1ff;
+}
+/* Efeito de fade-in ao rolar a página */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+header {
+    transition: background-color 0.5s ease;
+}
+
+/* Efeito de zoom para o logotipo na navbar */
+.logomarca img {
+    transition: transform 0.5s ease;
+}
+
+.logomarca img:hover {
+    transform: scale(1.1);
+}
+
+/* Animação da navegação para destacar o link ativo */
+nav ul li a {
+    position: relative;
+    color: #ecf0f1;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #02e1ff;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #02e1ff;
+    left: 50%;
+    bottom: -5px;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.responssivo{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .responssivo{
+        display: contents;
+    }
+    .descktop{
+        display: none;
+    }
+    .none{
+        display: none;
+    }
+    .logomarca img{
+        width: 80px;
+        padding: 10px;
+    }
+
+    header nav ul{
+        gap: 25px;
+    }
+    footer .content{
+        display: block;
+    }
+
+    main .content{
+        display: block;
+    }
+
+    main h2{
+        width: 100%;
+        font-size: 25px;
+    }
+}

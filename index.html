@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta tags essenciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site oficial da Turma do Curso Técnico de Comunicação e Serviços Digitais (23TCSD) da escola ETAP. Acompanhe projetos, notícias e informações sobre a turma.">
+    <meta name="keywords" content="Curso Técnico, Comunicação e Serviço Digital, ETAP, 23TCSD, educação, projetos digitais">
+    <meta name="author" content="Turma 23TCSD - ETAP">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="imagem/23TCSD_logotipo.png" type="image/x-icon">
+    <!-- Open Graph para compartilhamento social -->
+    <meta property="og:title" content="23TCSD | ETAP">
+    <meta property="og:description" content="Explore os projetos e atividades do Curso Técnico de Comunicação e Serviços Digitais da ETAP.">
+    <meta property="og:image" content="imagem/23TCSD_logomarca"> <!-- Adicione uma imagem representativa -->
+    <meta property="og:url" content="https://www.instagram.com/tcsd23etap?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> 
+    <meta property="og:type" content="website">
+    <!-- Nome do site no Mobile e tela de favoritos -->
+    <meta name="theme-color" content="#0044cc">
+
+    <!-- Título da página -->
+    <title>23TCSD | ETAP - Comunicação e Serviços Digitais</title>
+
+    <!-- Estilos e ícones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Scripts -->
+    <script defer src="script.js"></script>
+
+    <!-- Preconnect para otimizar fontes e bibliotecas externas -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+
+    <!-- Fontes (se necessário) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- Navbar -->
+<header class="fade-in">
+    <div class="logomarca">
+        <img src="imagem/23TCSD_logomarca.png" alt="logomarca 23TCSD">
+    </div>
+    <nav>
+        <ul>
+            <li class="responssivo"><a href="index.html">Home</a></li>
+            <li class="descktop"><a href="index.html">HOME</a></li>
+            <li class="none"><a href="#escola">A ESCOLA</a></li>
+            <li class="none"><a href="#curso">O CURSO</a></li>
+            <li class="descktop"><a href="turma.html">A TURMA</a></li>
+            <li class="responssivo"><a href="turma.html">A turma</a></li>
+            <li class="descktop"><a href="https://www.etap.pt/">ETAP WEB</a></li>
+            <li class="responssivo"><a href="https://www.etap.pt/">Etap web</a></li>
+            <li class="responssivo"><a href="contacto.html">Contacto</a></li>
+            <li class="descktop"><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    
+
+    <div class="fade-in">
+        <div class="home" id="inicio">
+            <div class="content">
+                <h1>BEM-VINDO AO <span>CURSO</span></h1>
+                <h2><span>TÉCNICO DE COMUNICAÇÃO E SERVIÇO DIGITAL</span></p>
+                <p>Conheça mais sobre a nossa escola, o nosso curso e os alunos que fazem parte desta jornada.</p>
+            </div>
+        </div>
+    </div>
+
+    <video src="imagem/23tcsd_a_nossa_missão.mp4" autoplay muted playsinline loop>
+        <source src="imagem/23tcsd_a_nossa_missão.mp4">
+        <source src="imagem/23tcsd_a_nossa_missão.mp4.webM">
+        <source src="imagem/23tcsd_a_nossa_missão.mp4.ogv">
+    </video>
+
+     <!-- Seção Sobre a Escola -->
+     <section id="escola" class="fade-in">
+        <h2>Sobre a Escola ETAP</h2>
+        <p>A ETAP é uma instituição reconhecida pela sua excelência no ensino técnico e profissional, formando alunos para o mercado de trabalho nas mais diversas áreas.</p>
+        <img src="imagem/logomarca_etap.png" alt="etapa logomarca"> 
+        <img src="imagem/logos_etap.png" alt="etap logo">
+    </section>
+
+     <!-- Seção Sobre o Curso -->
+     <section id="curso" class="fade-in">
+        <h2>Sobre o Curso de Comunicação e Serviços Digitais</h2>
+        <p>O curso de Comunicação e Serviços Digitais prepara os alunos para atuar no mercado de trabalho com competências digitais, incluindo design, marketing digital, desenvolvimento web e muito mais.</p>
+    </section>
+
+<footer>
+<div class="redes">
+    <nav>
+        <ul>
+            <a href="https://www.instagram.com/tcsd23etap?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61567634795975"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.tiktok.com/@tcsd.etap?_t=8rNzKG70IWf&_r=1"><i class="bi bi-tiktok"></i></a>
+        </ul>
+    </nav>
+</div>
+<div class="content">
+    <ul>
+        <h3><strong>23TCSD Info</strong></h3>
+        <li><a href="index.html">Sobre</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="#" id="share-link">Partilhar</a></li>
+    </ul>
+    <script>
+        const shareLink = document.getElementById('share-link');
+    
+        shareLink.addEventListener('click', async (event) => {
+          event.preventDefault(); // Evita o comportamento padrão do link
+          if (navigator.share) {
+            try {
+              await navigator.share({
+                title: 'Minha Loja',
+                text: 'Confira esta incrível loja online!',
+                url: 'https://minhaloja.com', // Substitua pelo URL da sua loja
+              });
+              console.log('Compartilhado com sucesso!');
+            } catch (error) {
+              console.error('Erro ao compartilhar:', error);
+            }
+          } else {
+            alert('A funcionalidade de compartilhamento não é suportada neste navegador.');
+          }
+        });
+      </script>
+    <ul>
+        <h3>Aprendemos todos os dias, <br> e com todos</h3>
+        <li>Marketing digital</li>
+        <li>Neuromarketing</li>
+        <li>Redes sociais</li>
+        <li>Atendimento ao cliente</li>
+        <li>Branding & Design</li>
+        <li>Matemática</li>
+        <li>Psicologia</li>
+        <li>Intergração</li>
+        <li>Português</li>
+        <li>Economia</li>
+    </ul> 
+</div>
+
+
+</footer>
+
+<div class="done">
+    <p><code>BY <a href="https://www.instagram.com/ramos.c.e?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">ELIAS CARVALHO</a></code></p>
+</div>
+
+</body>
+</html>
